@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	分享音乐,分享快乐 - 戏蝶音乐网
+</title><meta name="Keywords" content="盗歌器,QQ空间背景音乐,QQ空间歌曲查询,2015 QQ空间音乐集合,音乐分享,qq空间音乐,戏蝶音乐网" /><meta name="Description" content="分享音乐，打造最全QQ空间歌曲外链！" /><meta name="Copyright" content="Xidie.Com,戏蝶网" /><link href="Images/web.css?v20150217" rel="stylesheet" /><link rel="stylesheet" href="/csshide1.css"/>
+<style></style >
+<link rel="stylesheet" href="/abprule.css"/>
+<style></style  >
+<style></style>
+<script type="text/javascript">window.onerror=function(){return true;}</script></head>
+<body>
+    <form method="post" action="" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc1NTI0MDUxNmRkFJSlaNY0LFr0YrrNdunwaxEGsJZ/rig9ofzaZZZUNYU=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+        <div id="body" title="后会无期,感谢各位网友多年来一直的支持！">
+            <p>有没有一首歌你听了许多年,现在依然会偶尔听听?</p>
+            <!-- <p>后会无期,感谢各位网友多年来一直的支持！！</p> -->
+            <div id="jp_container" role="application" aria-label="media player">
+                <div class="jp-type-playlist">
+                    <div id="jplayer" class="jp-jplayer"></div>
+                    <div class="jp-time">
+                        <span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+                        |
+						<span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="jp-playlist">
+                    <ul>
+                        <li>正在查找可播放歌曲……</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            &copy; 2015 Xidie.com. All Rights Reserved 戏蝶音乐网 <a target="_blank" href="http://user.qzone.qq.com/535121/main" title="留言给我">留言</a>
+        </div>
+    </form>
+    <script type="text/javascript" src="Images/jquery.js"></script>
+    <script type="text/javascript" src="Images/ThreeWebGL.js"></script>
+    <script type="text/javascript" src="Images/ThreeExtras.js"></script>
+    <script type="text/javascript" src="Images/Detector.js"></script>
+    <script type="text/javascript" src="Images/RequestAnimationFrame.js"></script>
+    <script id="vs" type="x-shader/x-vertex">
+			varying vec2 vUv;
+			void main() {
+				vUv = uv;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			}
+    </script>
+    <script id="fs" type="x-shader/x-fragment">
+			uniform sampler2D map;
+			uniform vec3 fogColor;
+			uniform float fogNear;
+			uniform float fogFar;
+			varying vec2 vUv;
+			void main() {
+				float depth = gl_FragCoord.z / gl_FragCoord.w;
+				float fogFactor = smoothstep( fogNear, fogFar, depth );
+				gl_FragColor = texture2D( map, vUv );
+				gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+			}
+    </script>
+    <script type="text/javascript" src="Images/cloud.js"></script>
+    <script type="text/javascript" src="Images/player.js"></script>
+    <script type="text/javascript" src="list.ashx"></script>
+
+    <!-- 以下非本站代码 -->
+    <div style="display: none;">
+        <script src="http://s96.cnzz.com/stat.php?id=1076174&web_id=1076174" language="JavaScript"></script>
+    </div>
+</body>
+</html>

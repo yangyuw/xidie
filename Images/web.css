@@ -1,0 +1,42 @@
+html {
+	margin: 0px; height: 100%; text-align: center; color: rgb(35, 35, 35); overflow: hidden; font-family: "ËÎÌו", Verdana, Helvetica, Sans-Serif; font-size: 13px; background-color: rgb(255, 255, 255);
+}
+body {
+	margin: 0px; height: 100%; text-align: center; color: rgb(35, 35, 35); overflow: hidden; font-family: "ËÎÌו", Verdana, Helvetica, Sans-Serif; font-size: 13px; background-color: rgb(255, 255, 255);
+}
+body {
+	background-image: url("bg.jpg?v20150217");
+}
+#form1 {
+	position: relative; z-index: 100;
+}
+#body {
+	margin: auto; width: 900px; height: 500px; text-align: left; background-image: url("bg.png?v20150217"); background-repeat: no-repeat;
+}
+#copy {
+	margin: auto; text-align: center; color: rgb(18, 38, 81);
+}
+#jp_container {
+	position: relative;
+}
+#jp_container .jp-playlist {
+	left: 230px; top: 350px; width: 500px; position: absolute;
+}
+#jp_container .jp-playlist li {
+	width: 150px; text-align: left; line-height: 20px; float: left;
+}
+#jp_container .jp-playlist li a {
+	text-align: left; text-decoration: none;
+}
+.jp-playlist-item {
+	color: rgb(128, 128, 128);
+}
+.jp-playlist-current {
+	color: rgb(29, 130, 228);
+}
+.jp-artist {
+	display: none;
+}
+.jp-time {
+	left: 560px; top: 330px; width: 120px; color: rgb(204, 204, 204); position: relative;
+}
